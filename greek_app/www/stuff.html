@@ -1,0 +1,40 @@
+
+<div id="editor-container">
+</div>
+    <script>
+        var toolbarOptions = [
+             ['bold', 'italic'],
+             [{ 'size': ['small', false, 'large', 'huge'] }],
+             ['code-block'],    
+             [{ 'color': [] }, { 'background': [] }],
+             [{ list: 'ordered' }, { list: 'bullet' }],
+             [{ 'font': [] }],
+            ] 
+         
+             var quill = new Quill('#editor-container', {
+             modules: {
+             toolbar: {
+                 container: toolbarOptions,
+                 }     
+            },
+             placeholder: 'Type stuff here...',
+             theme: 'snow'
+         });
+         //document.getElementById('editor-container').onkeyup = function(){
+            //var variable=document.getElementById('editor-container').getElementsByClassName('ql-editor')[0].innerHTML;
+          //  Shiny.onInputChange('mydata', variable);
+        //};
+        
+        quill.on('text-change', function(delta, oldDelta, source) {
+            var variable=document.getElementById('editor-container').getElementsByClassName('ql-editor')[0].innerHTML;
+            Shiny.onInputChange('mydata', variable);
+        });    
+        
+        
+        Shiny.addCustomMessageHandler("greek_lines_stuff", function(message){
+            document.getElementById('editor-container').getElementsByClassName('ql-editor')[0].innerHTML=message
+            Shiny.onInputChange('mydata', message);
+        });
+    </script>  
+    <br>
+    

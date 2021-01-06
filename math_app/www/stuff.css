@@ -1,0 +1,101 @@
+
+.custom_btn, #runcode_run, #Next, #Previous, #Preview, #GoBack, #Preview2, #GoBack2, #Present, #NextP, #PreviousP, #Edit{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+#presenting_div{
+  padding-top:1%;
+  padding-bottom:1%;
+}
+#editing_div{
+  padding:5%;
+}
+#Edit{
+  font-size: 1.5em!important;
+  display: inline-block;
+}
+
+#Present{
+  font-size: 1.5em!important;;
+}
+
+.ql-snow .ql-editor{
+    background-color: white;
+    overflow: visible;
+}
+
+.ql-toolbar{
+    background-color: white;
+}
+
+#editor, #editor2{ 
+    width:100%;
+    height:10%;
+    padding-bottom:10%;
+    padding-top:5%;
+}
+
+#ace-holder, #ace-holder2{
+    margin:5px 0;
+    margin-bottom:-3%;
+}
+
+#acclab{
+  padding-left:7%;
+}
+
+
+/*
+BELOW IS CSS FOR R SHINY ELEMENTS ONLY
+*/
+
+/*
+horizontal list for displaying (go back and preview button)
+*/
+
+.horul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.horli{
+  float: left;
+}
+
+#horliright{
+  padding-left:2%;
+}
+
+/*
+Makes the console as wide as the other text areas
+*/
+#typeCode-runcode_expr{
+  width:100%;
+  height:10%;
+}
+
+.codewrapper{
+  margin:5px 0;
+  padding:3px;
+}
+
+.form-group{
+    width:100%!important;
+}
+
+.ql-tooltip{
+  left:0 !important;
+}
+

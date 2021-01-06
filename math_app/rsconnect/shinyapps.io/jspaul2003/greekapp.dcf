@@ -1,0 +1,12 @@
+name: greekapp
+title: greekapp
+username:
+account: jspaul2003
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2572156
+bundleId: 3393086
+url: https://jspaul2003.shinyapps.io/greekapp/
+when: 1594769520.62838
+asMultiple: FALSE
+asStatic: FALSE

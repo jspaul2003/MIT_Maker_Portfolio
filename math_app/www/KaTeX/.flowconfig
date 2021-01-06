@@ -1,0 +1,13 @@
+[version]
+0.131.0
+
+[ignore]
+<PROJECT_ROOT>/dist
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]

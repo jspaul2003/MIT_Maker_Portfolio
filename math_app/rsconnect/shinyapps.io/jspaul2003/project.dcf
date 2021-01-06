@@ -1,0 +1,12 @@
+name: project
+title: project
+username:
+account: jspaul2003
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2539496
+bundleId: 3356051
+url: https://jspaul2003.shinyapps.io/project/
+when: 1594003491.46808
+asMultiple: FALSE
+asStatic: FALSE

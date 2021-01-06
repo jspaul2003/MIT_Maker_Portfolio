@@ -1,0 +1,34 @@
+
+<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+<div id="ace-holder">
+    <div id="editor"></div>
+</div>
+
+<br>
+
+<br>
+    
+<script>
+        console.log("hello");
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/dracula");
+        editor.session.setMode("ace/mode/r");
+        editor.setAutoScrollEditorIntoView(true);
+        
+        document.getElementById('editor').onkeyup = function(){
+            Shiny.onInputChange('user_code', editor.getValue());
+            //console.log(editor.getValue());
+        };
+        
+        Shiny.addCustomMessageHandler("user_code_stuff", function(message){
+            editor.setValue(message, -1)
+            Shiny.onInputChange('user_code', message);
+        });
+        
+</script>
+
+<br>
+
+
+
