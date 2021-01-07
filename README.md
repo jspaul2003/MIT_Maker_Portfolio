@@ -22,13 +22,13 @@ The greek_app folder contains the R Shiny app and code for the Greek Presenter I
 
 The math_app folder contains the R Shiny app and code for the Math Proofs and Problems Presenter I built for the Harvard College class I TA'd in August (RA-23 "Real Analysis").
 
-(NB: each of these wont work their own as is, because the SQL database name, host, user, and password has not been configured)
+(NB: each of these wont work their own as is, because the SQL database name, host, user, and password have not been configured)
 
 The greek_app_schema folder contains the SQL file for the Greek app's database schema.
 
 The math_app_schema folder contains the SQL file for the math app's database schema.
 
-The pdf is a (slightly modified) guide on how to use the math presenter I wrote for the Harvard College students in RA-23.
+The pdf is a (slightly modified) guide on how to use the math presenter I wrote for Harvard College students in RA-23.
 
 
 
